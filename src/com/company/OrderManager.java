@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class OrderManager {
     private Order[] orders;
-    private HashMap<String, Order> internetOrders;
+    private HashMap<String, Order> internetOrders = new HashMap<String, Order>();
 
     public OrderManager(Order[] orders) {
         this.orders = orders;

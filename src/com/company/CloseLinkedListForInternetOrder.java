@@ -147,6 +147,7 @@ public class CloseLinkedListForInternetOrder {
 
     public double getCostTotal() {
         double sum = 0.0;
+        sum += this.first.value.getCost();
         for (Node node = this.first.next; node != this.first; node = node.next) {
             sum += node.value.getCost();
         }
