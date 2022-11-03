@@ -1,6 +1,6 @@
 package com.company;
 
-public class InternetOrder {
+public class InternetOrder implements Order{
     private CloseLinkedListForInternetOrder items;
 
     public InternetOrder(Item[] items) {
@@ -29,6 +29,11 @@ public class InternetOrder {
 
     public int getQuantityOfItems() {
         return items.size();
+    }
+
+    @Override
+    public Item[] getItems() {
+        return items.toArray();
     }
 
     public double getCostTotal() {
